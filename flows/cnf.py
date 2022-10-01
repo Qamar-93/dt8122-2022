@@ -5,30 +5,6 @@ from nets import HyperNetwork
 
 from torchdiffeq  import odeint
 
-# class CNF(Flow):
-#     def __init__(self, bijections, net):
-#         super().__init__(bijections,net)
-        
-#     def flow_outputs(self, x):
-#         log_det = torch.zeros(torch.Size([x[0].shape[0],x[1].shape[0],1]), device=self.device)    
-#         z = x
-#         for bijection in self.flow:
-#             z, ldj = bijection(z)
-#             log_det += ldj
-            
-#         return z, log_det
-    
-#     def sample(self, num_samples):
-#         ts = torch.tensor([0, 1]).type(torch.float32).to(self.device)
-#         z0 = self.base_dist.sample((num_samples,))
-#         logp_diff_t0 = torch.zeros(z0.size()[0], 1).type(torch.float32).to(self.device)
-#         z = (ts, z0, logp_diff_t0)
-#         for bijection in reversed(self.flow):
-#             z = bijection.inverse(z)
-    
-#         return z
-
-
 class CNF(nn.Module):
     """Adapted from the NumPy implementation at:
     https://gist.github.com/rtqichen/91924063aa4cc95e7ef30b3a5491cc52
