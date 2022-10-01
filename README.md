@@ -9,4 +9,4 @@ In order to run and see the results of Continuous-Time Flows, you can use the ju
 
 The Three GIF files are available [here](https://github.com/Qamar-93/dt8122_Submission/tree/main/gif_results)
 
-All the results including the images and the pretrained models are available at [Real-NVP](https://github.com/Qamar-93/dt8122_Submission/tree/main/results/realnvp) and [CNF](https://github.com/Qamar-93/dt8122_Submission/tree/main/results/cnf).
+## All the results including the images and the pretrained models are available at [Real-NVP](https://github.com/Qamar-93/dt8122_Submission/tree/main/results/realnvp) and [CNF](https://github.com/Qamar-93/dt8122_Submission/tree/main/results/cnf).
